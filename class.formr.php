@@ -4804,10 +4804,6 @@ class Formr
                     $_SESSION['formr']['token'] = null;
                 }
             }
-
-            if (isset($message)) {
-                $this->error_message($message);
-            }
         }
     }
 
