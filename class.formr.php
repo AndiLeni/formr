@@ -3363,7 +3363,7 @@ class Formr
         $return .= $this->_fix_classes($return, $data);
 
         # if required
-        if ($this->_check_required($data['name'], $data)) {
+        if ($this->_check_required($data['name'])) {
             $return .= ' required';
         }
 
@@ -3450,7 +3450,7 @@ class Formr
         $return .= $this->_fix_classes($return, $data);
 
         # if required
-        if ($this->_check_required($data['name'], $data)) {
+        if ($this->_check_required($data['name'])) {
             $return .= ' required';
         }
 
