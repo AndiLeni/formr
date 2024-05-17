@@ -1437,7 +1437,7 @@ class Formr
         }
 
         # prints form errors
-        if ($this->inline_errors) {
+        if ($this->inline_errors == false) {
             if (empty($open_tag) && empty($close_tag)) {
                 $open_tag = null;
                 $close_tag = null;
