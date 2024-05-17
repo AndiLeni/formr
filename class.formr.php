@@ -707,16 +707,6 @@ class Formr
             }
         }
 
-        if (empty($class_string)) {
-            if ($data['type'] == 'submit' || $data['type'] == 'button') {
-                if ($this->_wrapper_is('bootstrap')) {
-                    $classes = $this->controls['button-primary'];
-                } else {
-                    $classes = $this->controls['button'];
-                }
-            }
-        }
-
         return ' class="'.$classes.'" '.$string;
     }
 
